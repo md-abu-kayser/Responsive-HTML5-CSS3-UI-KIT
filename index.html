@@ -417,13 +417,10 @@
         <div class="team-grid">
           <div class="team-member card">
             <div class="member-image">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-                alt="Team member"
-              />
+              <img src="images/kawser.png" alt="Team member" />
             </div>
             <div class="member-info">
-              <h3>Michael Rodriguez</h3>
+              <h3>Muhammad Kawser</h3>
               <p>Principal Architect</p>
               <div class="member-social">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -434,13 +431,10 @@
           </div>
           <div class="team-member card">
             <div class="member-image">
-              <img
-                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-                alt="Team member"
-              />
+              <img src="images/team1.png" alt="Team member" />
             </div>
             <div class="member-info">
-              <h3>Sarah Johnson</h3>
+              <h3>Will & Sarah</h3>
               <p>Senior Designer</p>
               <div class="member-social">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -451,14 +445,11 @@
           </div>
           <div class="team-member card">
             <div class="member-image">
-              <img
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
-                alt="Team member"
-              />
+              <img src="images/team2.png" alt="Team member" />
             </div>
             <div class="member-info">
-              <h3>David Chen</h3>
-              <p>Project Manager</p>
+              <h3>Samiha & David & Watson</h3>
+              <p>Project Designers</p>
               <div class="member-social">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -468,13 +459,10 @@
           </div>
           <div class="team-member card">
             <div class="member-image">
-              <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80"
-                alt="Team member"
-              />
+              <img src="images/team3.png" alt="Team member" />
             </div>
             <div class="member-info">
-              <h3>Emily Watson</h3>
+              <h3>Emily & Turner</h3>
               <p>Interior Architect</p>
               <div class="member-social">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -514,7 +502,7 @@
                   />
                 </div>
                 <div class="author-info">
-                  <h4>Robert Thompson</h4>
+                  <h4>Muhammad Kawser</h4>
                   <p>CEO, TechVision Inc.</p>
                 </div>
               </div>
@@ -719,150 +707,12 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2023 G3 Architects. All rights reserved.</p>
+          <p>&copy; 2025 G3 Architects. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
-    <script>
-      // Theme Switcher
-      const themeOptions = document.querySelectorAll(".theme-option");
-
-      themeOptions.forEach((option) => {
-        option.addEventListener("click", () => {
-          const theme = option.getAttribute("data-theme");
-          document.body.setAttribute("data-theme", theme);
-
-          // Update active class
-          themeOptions.forEach((opt) => opt.classList.remove("active"));
-          option.classList.add("active");
-        });
-      });
-
-      // Mobile Menu Toggle
-      const mobileToggle = document.querySelector(".mobile-toggle");
-      const mobileMenu = document.querySelector(".mobile-menu");
-      const mobileMenuClose = document.querySelector(".mobile-menu-close");
-
-      mobileToggle.addEventListener("click", () => {
-        mobileMenu.classList.add("active");
-      });
-
-      mobileMenuClose.addEventListener("click", () => {
-        mobileMenu.classList.remove("active");
-      });
-
-      // Close mobile menu when clicking on a link
-      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
-      mobileNavLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.remove("active");
-        });
-      });
-
-      // Header scroll effect
-      const header = document.getElementById("header");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-
-      // Project filtering
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const projectCards = document.querySelectorAll(".project-card");
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          // Update active button
-          filterButtons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
-
-          const filterValue = button.getAttribute("data-filter");
-
-          // Filter projects
-          projectCards.forEach((card) => {
-            if (
-              filterValue === "all" ||
-              card.getAttribute("data-category") === filterValue
-            ) {
-              card.style.display = "block";
-            } else {
-              card.style.display = "none";
-            }
-          });
-        });
-      });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 100,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-
-      // Testimonial slider (simplified version)
-      const testimonialText = document.querySelector(".testimonial-text");
-      const testimonialAuthor = document.querySelector(
-        ".testimonial-author h4"
-      );
-      const testimonialRole = document.querySelector(".testimonial-author p");
-
-      const testimonials = [
-        {
-          text: "Working with G3 Architects was an exceptional experience from start to finish. Their innovative design for our corporate headquarters perfectly captured our brand identity while creating a functional and inspiring workspace for our team.",
-          author: "Robert Thompson",
-          role: "CEO, TechVision Inc.",
-        },
-        {
-          text: "The residential design created by G3 Architects exceeded our expectations. They listened to our needs and delivered a home that is both beautiful and highly functional for our family.",
-          author: "Jennifer Martinez",
-          role: "Homeowner",
-        },
-        {
-          text: "G3 Architects transformed our outdated office space into a modern, collaborative environment that has significantly improved employee satisfaction and productivity.",
-          author: "James Wilson",
-          role: "Operations Director, Innovate Co.",
-        },
-      ];
-
-      let currentTestimonial = 0;
-
-      function updateTestimonial() {
-        testimonialText.textContent = testimonials[currentTestimonial].text;
-        testimonialAuthor.textContent = testimonials[currentTestimonial].author;
-        testimonialRole.textContent = testimonials[currentTestimonial].role;
-      }
-
-      document
-        .querySelector(".slider-btn.next")
-        .addEventListener("click", () => {
-          currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-          updateTestimonial();
-        });
-
-      document
-        .querySelector(".slider-btn.prev")
-        .addEventListener("click", () => {
-          currentTestimonial =
-            (currentTestimonial - 1 + testimonials.length) %
-            testimonials.length;
-          updateTestimonial();
-        });
-    </script>
+    <!-- Javascript  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
