@@ -1,3 +1,6 @@
+// js code start:
+// ------------------------------------------------------------------>
+
 // Theme Switcher
 const themeOptions = document.querySelectorAll(".theme-option");
 
@@ -25,7 +28,6 @@ mobileMenuClose.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
 
-// Close mobile menu when clicking on a link
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
 mobileNavLinks.forEach((link) => {
   link.addEventListener("click", () => {
@@ -50,7 +52,6 @@ const projectCards = document.querySelectorAll(".project-card");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    // Update active button
     filterButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
 
@@ -70,7 +71,6 @@ filterButtons.forEach((button) => {
   });
 });
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -88,7 +88,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Testimonial slider (simplified version)
 const testimonialText = document.querySelector(".testimonial-text");
 const testimonialAuthor = document.querySelector(".testimonial-author h4");
 const testimonialRole = document.querySelector(".testimonial-author p");
@@ -129,3 +128,5 @@ document.querySelector(".slider-btn.prev").addEventListener("click", () => {
     (currentTestimonial - 1 + testimonials.length) % testimonials.length;
   updateTestimonial();
 });
+
+// js end --------->

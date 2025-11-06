@@ -1,6 +1,7 @@
 /* CSS Style  */
+/* ----------------------------------------------------- */
+/* Custom */
 :root {
-  /* Default Theme (Light) */
   --primary: #ff6b35;
   --primary-light: #ff9b6b;
   --primary-dark: #d14900;
@@ -323,7 +324,7 @@ section {
   background: #6a5acd;
 }
 
-/* Header & Navigation */
+/* Header and Navigation */
 header {
   position: fixed;
   top: 0;
@@ -1383,3 +1384,5 @@ footer {
   gap: 1rem;
   margin-top: 3rem;
 }
+
+/* CSS End */
